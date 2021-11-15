@@ -28,15 +28,15 @@ class HifiScreen extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             // All OUR WIDGETS WILL GO IN HERE
-            TextButton(
-              onPressed: () {
-                print("pressed");
-              },
-              child: Text('SIGN IN'),
-              style: TextButton.styleFrom(
-                  primary: Colors.white,
-                  backgroundColor: Colors.blue,
-                  onSurface: Colors.grey),
+            ElevatedButton(
+              onPressed: () {},
+              child: const Text("SIGN IN"),
+              style: ElevatedButton.styleFrom(
+                  primary: Colors.blue,
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 50, vertical: 20),
+                  textStyle: const TextStyle(
+                      fontSize: 30, fontWeight: FontWeight.bold)),
             )
           ],
         ),
